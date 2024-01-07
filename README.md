@@ -13,9 +13,9 @@ The report for this project can be found [here](./vullm.pdf).
 
 ## Datasets
 
-**Reveal** contains 23000 examples of code snippets, labels as vulnerable or
-*not vulnerable. The dataset is available on
-*[huggingface](https://huggingface.co/datasets/Oscaraandersson/reveal).
+**Reveal** contains 22,734 examples of code snippets, labels as vulnerable or
+not vulnerable. The dataset is available on
+[huggingface](https://huggingface.co/datasets/Oscaraandersson/reveal).
 
 ## Scripts
 The repositry contains four main scripts. Two are for the sequence model and two
@@ -25,7 +25,7 @@ script. They are found in ``src/sequence_model`` and ``src/causal_model``
 The scripts take to arguments, ``--modelname`` and ``--config``. The modelname
 is the key of the model in the config file. The config file is a json file
 containing the hyperparameters for the model. The config file is found in
-``src/config.json``.
+``config.json``.
 
 Below is a table with explaining the different hyperparameters.
 
@@ -54,7 +54,8 @@ To access the Llama models, access on huggingface are needed. find more on the
 huggingface [website](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf).
 
 ## Installation
-Start by creating a virtual environment and install the dependencies.
+Start by creating a virtual environment and install the dependencies. 
+Python 3.11.6 was used in this project
 
 ```bash
 python -m venv venv
